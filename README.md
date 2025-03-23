@@ -6,6 +6,10 @@ I made this script with the help of ChatGPT to make setting up the tools faster 
 
 Automate the process of connecting to the VPN, starting the Docker container, and opening Firefox in kiosk mode for a smoother HTB Academy experience.
 
+## Tools
+
+The script uses a Docker image from [linuxserver.io](https://linuxserver.io) that contains [Kali Linux](https://docs.linuxserver.io/images/docker-kali-linux/). Note that it is not a full virtual machine but a [Docker](https://www.docker.com/) container.
+
 ## Prerequisites
 
 Before getting started, make sure you have installed:
