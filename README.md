@@ -37,6 +37,8 @@ git clone --depth 1 https://github.com/Ersindacalista/Fast-HTB-Lab ~/htb
 cd htb
 ```
 
+Copy your HTB or any .ovpn file inside the folder, and make sure to name it config.ovpn
+
 To start everything up:
 
 ```bash
