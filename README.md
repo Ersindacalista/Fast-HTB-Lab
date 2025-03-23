@@ -8,7 +8,7 @@ Automate the process of connecting to the VPN, starting the Docker container, an
 
 ## Tools
 
-The script uses a Docker image from [linuxserver.io](https://linuxserver.io) that contains [Kali Linux](https://docs.linuxserver.io/images/docker-kali-linux/). Note that it is not a full virtual machine but a [Docker](https://www.docker.com/) container.
+The script use a Docker image from [linuxserver.io](https://linuxserver.io) that contains [Kali Linux](https://docs.linuxserver.io/images/docker-kali-linux/). Note that it is not a full virtual machine but a [Docker](https://www.docker.com/) container.
 
 ## Prerequisites
 
