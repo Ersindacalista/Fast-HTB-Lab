@@ -56,7 +56,7 @@ The script will automatically:
 To stop everything:
 
 ```bash
-sudo bash start_htb.sh -stop
+sudo bash lab.sh -stop
 ```
 
 This command:
