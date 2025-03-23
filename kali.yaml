@@ -1,0 +1,22 @@
+services:
+  kali-linux:
+    image: lscr.io/linuxserver/kali-linux:latest
+    container_name: kali-linux
+    security_opt:
+      - seccomp:unconfined
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+      - SUBFOLDER=/
+      - "TITLE=Kali Linux"
+    volumes:
+      - ~/htb/storage:/storage
+      - /var/run/docker.sock:/var/run/docker.sock
+    devices:
+      - /dev/dri:/dev/dri
+    shm_size: "1gb"
+    ports:
+      - "3000:3000"
+      - "3001:3001"
+    privileged: true
