@@ -56,7 +56,7 @@ The script will automatically:
 To stop everything:
 
 ```bash
-sudo bash lab.sh -stop
+sudo lab.sh -stop
 ```
 
 This command:
