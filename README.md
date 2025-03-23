@@ -30,6 +30,13 @@ Before getting started, make sure you have installed:
 
 ### Full Startup
 
+Clone the repository
+
+```bash 
+git clone --depth 1 https://github.com/Ersindacalista/Fast-HTB-Lab ~/htb
+cd htb
+```
+
 To start everything up:
 
 ```bash
