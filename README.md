@@ -53,8 +53,8 @@ sudo ./lab.sh -init
 
 This command will:
 
-2. Ask for your Hack The Box credentials (API Key)
-3. Download the `config.ovpn` file for you
+1. Ask for your Hack The Box credentials (API Key)
+2. Download the `config.ovpn` file for you
 
 ### How to Get the API Key
 
