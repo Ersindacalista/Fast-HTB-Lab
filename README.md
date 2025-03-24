@@ -15,19 +15,19 @@ The script use a Docker image from [linuxserver.io](https://linuxserver.io) that
 Before getting started, make sure you have installed:
 
 - **Docker** and **Docker Compose**
+- **Curl**
 - **OpenVPN**
 - **Firefox**
-- **An OpenVPN configuration file** (`config.ovpn`)
-- **A docker-compose file** (e.g., `pen.yaml`) based on the linuxserver.io image
 
 ## Recommended Directory Structure
 
 ```
 /home/user/htb/
-    ├──/storage
+    ├── /storage
     ├── pen.yaml
     ├── config.ovpn
-    └── start_htb.sh
+    └── lab.sh
+    └── vpn_downloader.sh
 ```
 
 ## How to Use the Script
@@ -42,6 +42,25 @@ cd htb
 ```
 
 Copy your HTB or any .ovpn file inside the folder, and make sure to name it config.ovpn
+
+### First-Time Setup
+
+For first-time setup (if you don’t have an OpenVPN file yet), run:
+
+```bash
+sudo ./lab.sh -init
+```
+
+This command will:
+
+1. Ask for your Hack The Box credentials (API Key)
+2. Download the `config.ovpn` file for you
+
+### How to Get the API Key
+
+1. Go to [Hack The Box Profile Settings](https://app.hackthebox.com/profile/settings)
+2. Press the **Create App Token** button
+3. Copy the generated token
 
 To start everything up:
 
