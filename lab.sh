@@ -15,6 +15,11 @@ if [ "$1" == "-stop" ]; then
     stop_services
 fi
 
+if [ "$1" == "-init" ]; then
+    echo "Running VPN downloader script..."
+    bash vpn_downloader.sh
+fi
+
 running_containers=$(docker compose -f "$docker_compose_file" ps -q)
 
 if [ -n "$running_containers" ]; then
@@ -44,4 +49,3 @@ firefox_profile_dir="/tmp/firefox-kiosk-profile"
 sudo -u "$user_name" mkdir -p "$firefox_profile_dir"
 
 sudo -u "$user_name" firefox --no-remote --profile "$firefox_profile_dir" --kiosk http://localhost:3000 &
-
